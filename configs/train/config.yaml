@@ -31,8 +31,8 @@ model:
     freeze_embedder: True
     n_obs_steps_imagen: 2
     n_obs_steps_acting: 2
-    agent_state_dim: 16
-    agent_action_dim: 16
+    agent_state_dim: 6
+    agent_action_dim: 6
     decision_making_only: True
 
     ###################### DP Related 

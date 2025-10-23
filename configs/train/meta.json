@@ -3,20 +3,20 @@
         "image": {
             "shape": [
                 3,
-                320,
-                512
+                240,
+                424
             ],
             "type": "rgb"
         },
         "agent_pos": {
             "shape": [
-                16
+                6
             ],
             "type": "low_dim"
         }
     },
     "action": {
         "shape": [
-            16        ]
+            6        ]
     }
 }
