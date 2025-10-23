@@ -11,11 +11,11 @@
 
 
 # args
-name="experiment_name"
+name="unifolm-test"
 config_file=configs/train/config.yaml
 
 # save root dir for logs, checkpoints, tensorboard record, etc.
-save_root="/path/to/savedir"
+save_root="outputs/train/unifolm"
 
 mkdir -p $save_root/$name
 
