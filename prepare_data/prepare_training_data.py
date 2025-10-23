@@ -106,11 +106,17 @@ def main(args):
         for idx in tqdm(range(total_episodes)):
             # Copy source video to target vidoe dir
             source_video = source_view_dir / f"episode_{idx:06d}.mp4"
+            output_video = str(target_videos_view_dir / f"{idx}.mp4")
             if is_av1(source_video):
-                output_video = str(target_videos_view_dir / f"{idx}.mp4")
                 print(f"Converting episode_{idx:06d}.mp4 to H.264...")
                 convert_to_h264(source_video, output_video)
             else:
+                subprocess.run([
+                    "cp", "-f",
+                    str(source_video),
+                    str(output_video)
+                ],
+                    check=True)
                 print(f"Skipping episode_{idx:06d}.mp4: not AV1 encoded.")
 
             # Load parquet file
