@@ -18,7 +18,7 @@ conda install ffmpeg=7.1.1 -c conda-forge -y
 # If you already downloaded the repo:
 cd /workspace/data/unifolm-world-model-action/
 
-mkdir outputs/log-all.txt
+mkdir outputs/
 
 git pull
 git submodule update --init --recursive
