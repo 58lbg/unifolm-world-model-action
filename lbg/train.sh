@@ -4,6 +4,9 @@
 #执行远程的训练命令
 #nohup bash ./lbg/train.sh > outputs/log-all.txt 2>&1 &
 
+/root/miniconda3/bin/conda init bash
+source /root/miniconda3/etc/profile.d/conda.sh
+
 conda create -n unifolm-wma python==3.10.18 -y
 conda activate unifolm-wma
 
