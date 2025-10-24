@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# 后台运行
+#执行远程的训练命令
+#nohup bash ./lbg/train.sh > outputs/log-all.txt 2>&1 &
+
 conda create -n unifolm-wma python==3.10.18
 conda activate unifolm-wma
 
@@ -8,6 +12,9 @@ conda install ffmpeg=7.1.1 -c conda-forge
 
 # If you already downloaded the repo:
 cd /workspace/data/unifolm-world-model-action/
+
+mkdir outputs/log-all.txt
+
 git pull
 git submodule update --init --recursive
 
