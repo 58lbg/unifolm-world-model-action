@@ -1,5 +1,5 @@
 model:
-  pretrained_checkpoint: /backup/lerobots/lbg/unifolm-world-model-action/lbg/model/UnifoLM-WMA-0-Base
+  pretrained_checkpoint: /workspace/data/unifolm-world-model-action/lbg/model/UnifoLM-WMA-0-Base
   base_learning_rate: 1.0e-05
   scale_lr: False
   target: unifolm_wma.models.ddpms.LatentVisualDiffusion
@@ -229,7 +229,7 @@ data:
     train:
       target: unifolm_wma.data.wma_data.WMAData
       params:
-        data_dir: '/home/it/Desktop/lerobot/unifolm-test'
+        data_dir: '/workspace/data/train/unifolm-test'
         video_length: ${model.params.wma_config.params.temporal_length}
         frame_stride: 2
         load_raw_resolution: True
