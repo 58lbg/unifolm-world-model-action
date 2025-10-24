@@ -6,3 +6,5 @@ python prepare_training_data.py \
 
 
 huggingface-cli download unitreerobotics/UnifoLM-WMA-0-Base --local-dir ../lbg/model/UnifoLM-WMA-0-Base
+
+bash scripts/train.sh
