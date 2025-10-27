@@ -233,9 +233,9 @@ data:
         video_length: ${model.params.wma_config.params.temporal_length}
         frame_stride: 2
         load_raw_resolution: True
-        resolution: [320, 512]
+        resolution: [240, 424]
         spatial_transform: resize_center_crop
-        crop_resolution: [320, 512]
+        crop_resolution: [240, 424]
         random_fs: False
         cond_robot_label_prob: 0.0
         normalization_mode: 'min_max'
