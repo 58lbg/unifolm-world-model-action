@@ -34,4 +34,4 @@ cd /workspace/data/unifolm-world-model-action/
 cp -rf /workspace/data/unifolm-world-model-action/lbg/model/ /home/
 cp -rf /workspace/data/train/unifolm-test/ /home/unifolm-test
 
-bash scripts/train.sh
+#bash scripts/train.sh
