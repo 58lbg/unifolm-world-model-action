@@ -818,7 +818,8 @@ class WMAModel(nn.Module):
 
         hs_out = []
         for module in self.output_blocks:
-            print("[DEBUG] " + x.shape, emb.shape, context.shape)
+            print("[DEBUG] ")
+            print(x.shape, emb.shape, context.shape)
             h = torch.cat([h, hs.pop()], dim=1)
             h = module(h, emb, context=context, batch_size=b)
             if isinstance(module[-1], Upsample):
