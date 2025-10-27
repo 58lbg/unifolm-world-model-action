@@ -235,7 +235,7 @@ data:
         load_raw_resolution: True
         resolution: [240, 424]
         spatial_transform: resize_center_crop
-        crop_resolution: [240, 416]
+        crop_resolution: [192, 384]
         random_fs: False
         cond_robot_label_prob: 0.0
         normalization_mode: 'min_max'
