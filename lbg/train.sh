@@ -7,6 +7,8 @@
 /root/miniconda3/bin/conda init bash
 source /root/miniconda3/etc/profile.d/conda.sh
 
+export HF_ENDPOINT=https://hf-mirror.com
+
 conda activate unifolm-wma
 
 
