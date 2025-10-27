@@ -202,6 +202,10 @@ class MultiImageObsEncoder(ModuleAttrMixin):
                     batch_size = img.shape[0]
                 else:
                     assert batch_size == img.shape[0]
+                # 打印调试信息
+                print(f"[DEBUG] key: {key}")
+                print(f"[DEBUG] img.shape: {img.shape}")
+                print(f"[DEBUG] expected shape: {self.key_shape_map[key]}")
                 assert img.shape[1:] == self.key_shape_map[key]
                 if not self.use_dinoSiglip:
                     img = self.key_transform_map[key](img)
